@@ -1,1 +1,0 @@
-console.log("QUEM USA WHATSAPP GB NEM É GENTE");

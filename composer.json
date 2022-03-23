@@ -2,7 +2,7 @@
     "name": "web2/produtos",
     "description": "Projeto de uma pizzaria para a disciplina de Desenvolvimento Web 2",
     "license": "MIT",
-    "version": "1.01.1587",
+    "version": "2.01.2501",
     "config": {
         "platform": {
             "php": "7.4"
@@ -15,11 +15,10 @@
     },
     "autoload": {
         "psr-4": {
-            "src\\": "src/",
-            "Connection\\": "src/Connection",
-            "Model\\": "src/Model",
-            "Controller\\": "src/Controller",
-            "View\\": "src/View"
+            "App\\": "App/",
+            "Model\\": "App/Model",
+            "Controller\\": "App/Controller",
+            "View\\": "App/View"
         }, "files": ["config.php"]
     }
 }

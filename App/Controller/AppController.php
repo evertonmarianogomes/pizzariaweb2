@@ -11,14 +11,14 @@
         {
             @session_start();
             $this -> router = $router;
-            $this -> view = Engine::create($_SERVER["DOCUMENT_ROOT"]. "/pizzariaweb2/src/View/", "php");
+            $this -> view = Engine::create($_SERVER["DOCUMENT_ROOT"]. "/pizzariaweb2/App/View/", "php");
             $this -> view -> addData(["router"=>$router]);
         }
 
 
-        public function viewMain() : void 
+        public function viewLogin() : void 
         {
             
-            echo $this -> view -> render("viewMain", ["title" => PROJECT_NAME]);
+            echo $this -> view -> render("viewLogin", ["title" => PROJECT_NAME]);
         }
     }

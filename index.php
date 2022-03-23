@@ -9,7 +9,11 @@
 
     $router -> group(null);
 
-    $router -> get("/", "AppController:viewMain");
+    $router -> get("/", "AppController:viewLogin", "app.login");
+    
+    
+    $router -> post("/login", "LoginController:validateLogin", "app.validateLogin");
+
 
     $router->dispatch();
 
