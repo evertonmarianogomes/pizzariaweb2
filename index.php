@@ -10,7 +10,7 @@
     $router -> group(null);
 
     $router -> get("/", "AppController:viewLogin", "app.login");
-    
+    $router -> get("/home", "AppController:viewHome", "app.home");
     
     $router -> post("/login", "LoginController:validateLogin", "app.validateLogin");
 
