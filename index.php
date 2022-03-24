@@ -7,16 +7,16 @@
 
     $router->namespace("Controller");
 
-    $router -> group(null);
+    $router->group(null);
 
-    $router -> get("/", "AppController:viewLogin", "app.login");
-    $router -> get("/home", "AppController:viewHome", "app.home");
+    $router->get("/", "AppController:viewLogin", "app.login");
+    $router->get("/home", "AppController:viewHome", "app.home");
+    $router->get("/logout", "AppController:logoutUser", "app.logout");
     
-    $router -> post("/login", "LoginController:validateLogin", "app.validateLogin");
-
+    $router->post("/login", "LoginController:validateLogin", "app.validateLogin");
 
     $router->dispatch();
 
     if ($router->error()) {
-        echo "Ocorreu um erro: ". $router->error();
+        echo "Ocorreu um erro: " . $router->error();
     }

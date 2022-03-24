@@ -13,9 +13,9 @@ define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "db_products",
-    "username" => "root",
-    "passwd" => "",
+    "dbname" => "db_pizzariaweb2",
+    "username" => "admin",
+    "passwd" => "root",
     "options" => [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -31,21 +31,21 @@ define("DATA_LAYER_CONFIG", [
  *  - 2: Error message
  *  - 3: Success message
  */
-function message(String $messageText, int $messageType = 1) : stdClass
+function message(String $messageText, string $messageType = "Default") : stdClass
 {
     $message = [
         "toast_body" => filter_var($messageText, 515),
         "title_class" => match($messageType){
             default => "text-primary",
-            1 => "text-primary",
-            2 => "text-danger",
-            3 => "text-success"
+            "Default" => "text-primary",
+            "Error" => "text-danger",
+            "Success" => "text-success"
         },
         "title" => match($messageType){
             default => "Mensagem",
-            1 => "Mensagem",
-            2 => "Erro",
-            3 => "Sucesso"
+            "Default" => "Mensagem",
+            "Error" => "Erro",
+            "Success" => "Sucesso"
         }
     ];
     

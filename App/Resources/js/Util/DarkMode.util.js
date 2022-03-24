@@ -4,7 +4,7 @@
 
 let darkSwitch = document.querySelector("#darkSwitch");
 
-function DarkModeSwitch(darkSwitchElement) {
+function DarkModeSwitch() {
     initTheme();
     navbarDark();
 
