@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,MAAM,AAAC,CACH,eAAe,CAAE,SAAS,CAC7B,AAED,AAAA,MAAM,AAAC,CACH,eAAe,CAAE,UAAU,CAC9B,AAED,AAAA,aAAa,AAAC,CACV,SAAS,CAAE,KAAK,CACnB,AAGD,cAAc,CAAd,YAAc,CACV,AAAA,WAAW,AAAC,CACR,eAAe,CAAE,IAAI,CACrB,gBAAgB,CAAE,gBAAgB,CACrC,AAED,AAAA,MAAM,AAAA,QAAQ,AAAC,CACX,MAAM,CAAE,UAAU,CACrB",
+    "sources": [
+        "../../App/Resources/scss/macos_windows.scss"
+    ],
+    "names": [],
+    "file": "macos_windows.css"
+}

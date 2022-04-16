@@ -1,17 +1,20 @@
 {
-    "name": "web2/produtos",
+    "name": "web2/pizzariaweb2_v2",
+    "type": "project",
     "description": "Projeto de uma pizzaria para a disciplina de Desenvolvimento Web 2",
     "license": "MIT",
-    "version": "2.01.2501",
-    "config": {
-        "platform": {
-            "php": "7.4"
+    "homepage": "https://github.com/evertonmarianogomes/pizzariaweb2",
+    "authors": [
+        {
+            "name": "Everton M. Gomes",
+            "homepage": "https://github.com/evertonmarianogomes/"
         }
-    },
+    ],
+    "version": "2.01.2510-alpha1",
     "require": {
-        "coffeecode/router": "^1.0",
+        "coffeecode/router": "2.0.*",
         "league/plates": "v4.0.0-alpha",
-        "coffeecode/datalayer": "^1.1"
+        "coffeecode/datalayer": "2.0.*"
     },
     "autoload": {
         "psr-4": {
@@ -19,6 +22,9 @@
             "Model\\": "App/Model",
             "Controller\\": "App/Controller",
             "View\\": "App/View"
-        }, "files": ["config.php"]
+        },
+        "files": [
+            "config.php"
+        ]
     }
 }

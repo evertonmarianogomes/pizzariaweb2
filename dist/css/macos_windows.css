@@ -1,0 +1,2 @@
+.toast{-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}.modal{-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px)}.modal-dialog{max-width:750px}@-moz-document url-prefix(){.toast-body{backdrop-filter:none;background-color:white !important}.modal::before{filter:blur(10px)}}
+/*# sourceMappingURL=macos_windows.css.map */

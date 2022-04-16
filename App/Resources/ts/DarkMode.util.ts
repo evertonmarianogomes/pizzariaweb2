@@ -2,16 +2,21 @@
  * Link do Projeto: https://github.com/coliff/dark-mode-switch
 */
 
-let darkSwitch = document.querySelector("#darkSwitch");
+
+const darkSwitch:HTMLInputElement = document.querySelector("#darkSwitch");
 
 function DarkModeSwitch() {
-    initTheme();
-    navbarDark();
+    
+    if(darkSwitch != null) {
+        initTheme();
+        navbarDark();
 
-    darkSwitch.addEventListener("change", () => {
-        navbarDark()
-        resetTheme();
-    });
+        darkSwitch?.addEventListener("change", () => {
+            navbarDark()
+            resetTheme();
+        });
+    }
+
 }
 
 function initTheme() {

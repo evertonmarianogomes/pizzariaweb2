@@ -7,13 +7,13 @@
 
     $router->namespace("Controller");
 
-    $router->group(null);
+    $router->group("admin");
 
-    $router->get("/", "AppController:viewLogin", "app.login");
-    $router->get("/home", "AppController:viewHome", "app.home");
-    $router->get("/logout", "AppController:logoutUser", "app.logout");
+    $router->get("/", "AppController:viewLogin", "app.admin.login");
+    $router->get("/home", "AppController:viewHome", "app.admin.home");
+    $router->get("/logout", "AppController:logoutUser", "app.admin.logout");
     
-    $router->post("/login", "LoginController:validateLogin", "app.validateLogin");
+    $router->post("/login", "LoginController:validateLogin", "app.admin.validateLogin");
 
     $router->dispatch();
 

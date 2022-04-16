@@ -19,7 +19,7 @@
         private function redirect(string $message = ""): void
         {
             $_SESSION["messages"] = message($message, "Error");
-            $this->router?->redirect("app.login");
+            $this->router?->redirect("app.admin.login");
             exit();
         }
 
@@ -57,9 +57,7 @@
             } else if ($loginDao->fetch() != null) {
                 $user = $loginDao?->user()?->fetch()?->data();
                 if ($user != null) {
-                    $this->createUserSession($user, $login_data, (isset($data["redirect"])?$data["redirect"]:"app.home"));
-
-                    echo "Usuário encontrado no BD";
+                    $this->createUserSession($user, $login_data, (isset($data["redirect"])?$data["redirect"]:"app.admin.home"));
                 } else {
                     $this->redirect("Usuário não encontrado no Banco de Dados");
                 }

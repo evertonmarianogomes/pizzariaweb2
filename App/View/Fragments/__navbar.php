@@ -20,7 +20,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="<?= $router->route("app.logout") ?>" onclick="return confirm('Certeza que deseja sair?')">Logout</a></li>
+                        <li><a class="dropdown-item" href="<?= $router->route("app.admin.logout") ?>" onclick="return confirm('Certeza que deseja sair?')">Logout</a></li>
                     </ul>
                 </li>
                 <li class="nav-link">

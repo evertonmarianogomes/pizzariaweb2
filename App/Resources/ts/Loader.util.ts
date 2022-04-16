@@ -6,4 +6,4 @@ let Loader = () => {
     }, 1100)
 }
 
-export default Loader;;
+export default Loader;

@@ -4,6 +4,8 @@ define("PROJECT_URL", "http://localhost/pizzariaweb2/");
 
 define("PROJECT_NAME", "Pizzaria Web 2");
 
+define("PROJECT_VERSION", "2.01.2510-alpha1");
+
 
 /** DataLayer config params 
  * Read coffeecode/dataLayer documentation in Packagist for more information
@@ -26,10 +28,10 @@ define("DATA_LAYER_CONFIG", [
 
 /** Message Helper 
  * @param String $messageText Description/text of message
- * @param int $messageType Indicates the type of the message
- *  - 1 (Default): Default message
- *  - 2: Error message
- *  - 3: Success message
+ * @param String $messageType Indicates the type of the message
+ *  - 'Default' (Default): Default message
+ *  - 'Error': Error message
+ *  - 'Success': Success message
  */
 function message(String $messageText, string $messageType = "Default") : stdClass
 {

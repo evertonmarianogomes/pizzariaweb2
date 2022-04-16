@@ -1,25 +1,33 @@
-<?php $v->layout("__template")?>
+<?php $v->layout("__template"); ?>
+<style>
+    body {
+        background-image: url("/pizzariaweb2/images/pizza-login.jpg");
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+    }
 
- <main class="container pt-3">
+    .card {
+        backdrop-filter: blur(30px);
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+
+</style>
+<main class="container pt-3">
         <div class="row justify-content-center">
-            <div class="card card-blur col-sm-12 col-md-8 col-lg-6 shadow-sm login-card">
+            <div class="card col-sm-12 col-md-8 col-lg-6 shadow">
                 <div class="card-body">
                     <div class="d-flex w-100 flex-wrap mb-5 mb-md-1">
                         <div class="pt-2 flex-grow-1">
-                            <small class="text-black-50">Pizzaria Web 2</small>
+                            <small class="">Pizzaria Web 2 - Cliente</small>
                             <h3>Acesso</h3>
                         </div>
-                        <div class="pt-2">
-                            <div class="nav-item form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="darkSwitch">
-                                <label class="form-check-label" for="darkSwitch"><i class="fas fa-adjust"></i> Modo Escuro</label>
-                            </div>
-                        </div>
+         
                     </div>
 
                     <hr>
 
-                    <form action="<?=$router->route("app.admin.validateLogin")?>" method="post">
+                    <form action="<?=$router->route("app.validateLogin")?>" method="post">
                         <div class="form-group mb-4">
                             <label for="login" class="form-label">Login: </label>
                             <input type="text" class="form-control" id="login" name="login" required>
@@ -35,7 +43,9 @@
                         <?php endif; ?>
 
                         <button type="submit" class="btn btn-primary">Entrar</button>
+                        <a href="/pizzariaweb2/admin" class="btn btn-secondary ms-2">Acesso Administrativo</a>
                     </form>
+
                 </div>
             </div>
         </div>

@@ -19,13 +19,13 @@
         {
             if ($isExists) {
                 if(isset($_SESSION["user"] -> id)) {
-                    $this->router->redirect("app.home");
+                    $this->router->redirect("app.admin.home");
                     exit();
                 }
             } else {
                 if(!isset($_SESSION["user"] -> id)) {
                     $_SESSION["messages"] = message("Somente usuários autenticados podem acessar esse endereço", "Error");
-                    $this->router->redirect("app.login");
+                    $this->router->redirect("app.admin.login");
                     exit();
                 }
             }
@@ -36,7 +36,7 @@
         {
             unset($_SESSION["user"]);
             $_SESSION["messages"] = message("Usuário desconectado com sucesso", "Success");
-            $this -> router ?-> redirect("app.login");
+            $this -> router ?-> redirect("app.admin.login");
         }
 
         public function viewLogin() : void 
