@@ -1,0 +1,20 @@
+{
+    "name": "web2/pizzariaweb2",
+    "description": "Trabalho 2 de Desenvolvimento Web 2",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "version": "1.01.2329",
+    "require": {
+        "coffeecode/router": "^1.0",
+        "league/plates": "v4.0.0-alpha",
+        "dompdf/dompdf": "^2.0",
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Connection\\": "App/Connection",
+            "Model\\": "App/Model",
+            "Controller\\": "App/Controller"
+        }, "files": ["config.php"]
+    }
+}
