@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./_darkmode.scss";
+@import "./_loader.scss";
+
+.modal {
+    backdrop-filter: blur(20px) !important;
+}
+
+.toast-body {
+    backdrop-filter: blur(5px) !important;
+}
