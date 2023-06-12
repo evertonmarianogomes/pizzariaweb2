@@ -27,7 +27,7 @@ cd pizzariaweb2
 Instale as dependências
 
 ```bash
-composer install
+composer require
 ```
 
 ```bash
